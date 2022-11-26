@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Page for Conditional Statement</h1>
+<h1>You are an <span th:style="${isActive} ? 'color:green' :'color:red'"
+        th:text="${isActive} ? 'Active User' : 'Inactive User'"></span></h1>
+<h1 th:if="${gender}=='M'">Male</h1>
+<h1>Female</h1>
+
+<h1> Use of swithc</h1>
+<div th:switch="${#lists.size(mylist)}">
+    <h1 th:case="'0'">List Contain Zero elements</h1>
+    <h1 th:case="'1'">List Contain One Elements</h1>
+    <h1 th:case="*">List Contain n number of Elements</h1>
+</div>
+</body>
+</html>

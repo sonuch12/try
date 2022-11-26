@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body >
+<div th:fragment="footer1(title,subtitle)">
+    <h1> Title is <span th:text="${title}"></span></h1>
+    <h1>Subtitle is <span th:text="${subtitle}"></span></h1>
+<div >
+<h1>Welcome to Fragment tag</h1>
+
+<h1>Use this as Footer tag</h1>
+   <p>
+       Welcome to this paragraph
+   </p>
+</div>
+</div>
+</body>
+</html>
